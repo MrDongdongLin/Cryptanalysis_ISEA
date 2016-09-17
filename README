@@ -1,0 +1,28 @@
+This package of codes is correspoding to the paper:
+Chengqing Li, Dongdong Lin, "Cryptanalysis of an Image Scrambling Encryption Algorithm", Xiangtan, China, September 17, 2016.
+
+More information about this paper can be found at:
+http://arxiv.org/abs/1607.01642
+
+These folders contain codes about cipher-only attack and known plain-text attack on ISEA respectively, and file for calculating SSIM index is also introduced:
+"IQA_MSssim" contains codes of SSIM is from Dr. Zhou Wang.
+More details about the paper correspoding to this code can be found at:
+ http://foulard.ece.cornell.edu/gaubatz/metrix_mux/
+"cna_matlab_codes" contains two matlab codes, "CorrAttack.m" was written by Weihai Li, Yupeng Yan, Nenghai Yu and slightly modifiled by us.
+More details about the paper correspoding to this code can be found at:
+ DOI: 10.1145/2393347.2396392
+"kpa_matlab_codes" contains known plain-text attack on ISEA, You could run this project as follows:
+Step 1. Run the KPA_ISEA function,
+Step 2. Follow the tips. :-)
+
+All the known images are enrcypted with the same screct keys:
+Secrect keys of ISEA:
+m 	= 20
+n 	= 51
+x0 	= 0.2009
+mu 	= 3.98
+iteratime = 4
+
+See more details in each file.
+
+September 17

@@ -6,8 +6,8 @@ http://arxiv.org/abs/1607.01642
 
 These folders contain codes about cipher-only attack and known plain-text attack on ISEA respectively, and file for calculating SSIM index is also introduced:
 "IQA_MSssim" contains codes of SSIM is from Dr. Zhou Wang.
-More details about the paper correspoding to this code can be found at:
- http://foulard.ece.cornell.edu/gaubatz/metrix_mux/
+More details about these codes can be found at:
+ http://www.cns.nyu.edu/~lcv/ssim/
 "cna_matlab_codes" contains two matlab codes, "CorrAttack.m" was written by Weihai Li, Yupeng Yan, Nenghai Yu and slightly modifiled by us.
 More details about the paper correspoding to this code can be found at:
  DOI: 10.1145/2393347.2396392

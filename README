@@ -16,6 +16,7 @@ There are codes about cipher-only attack and known plain-text attack on ISEA, an
 http://www.cns.nyu.edu/~lcv/ssim/
 
 "cna_matlab_codes" contains two matlab codes, "CorrAttack.m" was written by Weihai Li, Yupeng Yan, Nenghai Yu and slightly modifiled by us. More details about the paper correspoding to this code can be found at:
+http://dl.acm.org/citation.cfm?id=2393347.2396392
 DOI:10.1145/2393347.2396392
 
 "kpa_matlab_codes" introduces known plain-text attack on ISEA, You could run this project as follows:

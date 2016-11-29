@@ -1,20 +1,27 @@
 This package of codes is correspoding to the paper:
-Chengqing Li, Dongdong Lin, "Cryptanalysis of an Image Scrambling Encryption Algorithm", Xiangtan, China, September 17, 2016.
+Chengqing Li, Dongdong Lin, "Cryptanalyzing an Image Scrambling Encryption Algorithm of Pixel Bits," IEEE MultiMedia, 2016.
+
+About the author:
+http://www.ee.cityu.edu.hk/~cqli/
 
 More information about this paper can be found at:
-http://arxiv.org/abs/1607.01642
+https://arxiv.org/pdf/1607.01642.pdf
 
-These folders contain codes about cipher-only attack and known plain-text attack on ISEA respectively, and file for calculating SSIM index is also introduced:
-  "IQA_MSssim" contains codes of SSIM is from Dr. Zhou Wang.
-More details about these codes can be found at:
-  http://www.cns.nyu.edu/~lcv/ssim/
-"cna_matlab_codes" contains two matlab codes, "CorrAttack.m" was written by Weihai Li, Yupeng Yan, Nenghai Yu and slightly modifiled by us.
-More details about the paper correspoding to this code can be found at:
-  DOI:10.1145/2393347.2396392
+This paper re-evaluated security of a typical image scrambling encryption algorithm (ISEA).
 
-"kpa_matlab_codes" contains known plain-text attack on ISEA, You could run this project as follows:
-Step 1. Run the KPA_ISEA function,
+/* ----------------------------------------------------------------------------------------- */
+There are codes about cipher-only attack and known plain-text attack on ISEA, and codes for calculating Structural Similarity Index (SSIM) of an image are also introduced:
+
+"IQA_MSssim" contains codes of SSIM is from Dr. Zhou Wang. More details about these codes can be found at:
+http://www.cns.nyu.edu/~lcv/ssim/
+
+"cna_matlab_codes" contains two matlab codes, "CorrAttack.m" was written by Weihai Li, Yupeng Yan, Nenghai Yu and slightly modifiled by us. More details about the paper correspoding to this code can be found at:
+DOI:10.1145/2393347.2396392
+
+"kpa_matlab_codes" introduces known plain-text attack on ISEA, You could run this project as follows:
+Step 1. Run "KPA_ISEA".
 Step 2. Follow the tips. :-)
+/* ----------------------------------------------------------------------------------------- */
 
 All the known images are enrcypted with the same screct keys:
 Secrect keys of ISEA:
@@ -26,4 +33,8 @@ iteratime = 4
 
 See more details in each file.
 
-September 17
+/* ----------------------------------------------------------------------------------------- */
+Versions:
+v4.0.2016.09.17   September 17 Modified by Dongdong Lin
+v4.3.2016.11.29   November 29  Modified by Dongdong Lin
+/* ----------------------------------------------------------------------------------------- */

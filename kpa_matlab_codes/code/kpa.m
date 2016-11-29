@@ -1,10 +1,16 @@
-% Description:    Function "kpa" returns an image gets from applying
-%                 known plain image attack on cImg, both cImg and aImg are
-%                 binary images.
-% Input:          Cipher image 'cImg' and equivalent screct keys TM and TN.
-% Output:         Decrypt image 'aImg'.
-% Format:         aImg = kpa(cImg, TM, TN);
 function [aImg] = kpa(cImg, TM, TN)
+%KPA: Recover image from cipher image and two equivalent keys TM and TN.
+% kpa(cImg, TM, TN) returns an image gets from applying known plain image 
+% attack on cImg, both cImg and aImg are binary images.
+% 
+% Example:
+%    aImg = kpa(cImg, TM, TN);
+% 
+% Output:   
+%    Decrypt image 'aImg'.
+
+%   Copyright 2016
+
 [height,width] = size(cImg);
 aImg = zeros(height,width);
 for i = 1:height

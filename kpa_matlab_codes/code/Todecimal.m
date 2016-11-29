@@ -1,15 +1,20 @@
-% Description:    Function "Todecimal" returns a decimal version of binary
-%                 image.
-% Input:          A binary image.
-% Output:         A decimal image.
 function [image]=Todecimal(imagename)
-    [~,~,idepth]=size(imagename);
-    if (idepth~=1)
-        imagename=rgb2gray(imagename);
-    end
-    image=double(imagename);
-    newimage=ComImage(image);
-    image=uint8(newimage);
+%TODECIMAL: Gets decimal version of an image.
+%   Todecimal(imagename) returns a decimal version of a binary version image.
+% 
+%   Example:
+%      bimage = imread('Lenna_b.bmp');
+%      image=Todecimal(bimage);
+
+%   Copyright 2016
+
+[~,~,idepth]=size(imagename);
+if (idepth~=1)
+    imagename=rgb2gray(imagename);
+end
+image=double(imagename);
+newimage=ComImage(image);
+image=uint8(newimage);
 end
 
 function [imt]=ComImage(ims)

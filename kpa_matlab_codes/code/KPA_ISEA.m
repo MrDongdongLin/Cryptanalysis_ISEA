@@ -1,22 +1,30 @@
-% Description:  Use KPA_ISEA function to get approximate TM and TN, and then
-%               use them to reveal a group of cipher images that are en-
-%               crypeted with same screct keys.
-% step 1:       Read one pair of known images,
-% step 2:       Get binary value version of plain image and cipher image,
-% step 3:       Reveal TM and TN, the two processes are similar:
-%               a) To get the number vector of 1's element of the rows in pl-
-%                   ain image and cipher image respectively,
-%               b) To get the unique number of vectors of 1's elements from
-%                   step 3-a),
-%               c) To reveal approximate TM or TN with comparing the unique 
-%                   number of 1's elements in plain image and cipher image.
-% Input:        Decimal value plain image and cipher image, pImg & cImg
-% Output:       Approximate TM and TN.
-% Format:       1. To get all rounds of TM and TN:
-%                   [~, ~, SET_TM, SET_TN] = KPA_ISEA();
-%               3. To get decrypt result:
-%                   KPA_ISEA();
 function [ind_TM, ind_TN, TM_SET, TN_SET, indTM_SET, indTN_SET] = KPA_ISEA(~)
+%KPA_ISEA: KPA_ISEA reveals cipher image with equivalent secret keys TM and TN.
+%   [~, ~, SET_TM, SET_TN] = KPA_ISEA() - Get TM and TN of all iteration rounds.
+%   KPA_ISEA() - Get decrypt image.
+%   
+%   KPA_ISEA gets approximate TM and TN, and uses them to reveal a group of
+%   cipher images that encrypeted with the same screct keys. Concrete approaches are
+%   described as follows.
+%   
+%   Step 1: Read a pair of known images.
+%   Step 2: Get binary value version of plain image and cipher image.
+%   Step 3: Reveal TM and TN, these two processes are similar:
+%       a) Get the number of elements 1's in each row vector of plain image and 
+%         cipher image respectively;
+%       b) Get unique number in vectors of 1's elements from Step 3-a);
+%       c) Reveal approximate TM or TN with comparing the unique number of elements
+%         1's in plain image and cipher image.
+%         
+%   Example:
+%       [~, ~, SET_TM, SET_TN] = KPA_ISEA();
+%       KPA_ISEA();
+%       
+%   Output:       
+%       Approximate TM and TN.
+  
+%   Copyright 2016
+
 [fname,dire]=uigetfile('*.bmp;*.jpg','select the cipher image :)');
 imagepath=[dire,fname];
 clear dire fname;

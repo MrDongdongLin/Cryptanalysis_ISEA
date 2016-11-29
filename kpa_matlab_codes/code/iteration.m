@@ -1,11 +1,16 @@
-% Description:    Function "iteration" need 6 input parameters, binary plain im-
-%                 age 'px', binary cipher image 'cx', indexes of subvector TM 
-%                 'ind_TM', subvector 'TM', indexes of subvector TN and subv-
-%                 ector 'TN'. For each round, this function updates TM , TN a-
-%                 nd their indexes with a pair of known image px and cx.
-% Format:         [TM_SET, TN_SET, indTM_SET, indTN_SET] = iteration(px, ...
-%                 cx, ind_TM, TM, ind_TN, TN);
 function [TM_SET, TN_SET, indTM_SET, indTN_SET] = iteration(px, cx, ind_TM, TM, ind_TN, TN)
+%ITERATION: Do iteration process.
+%   iteration(px, cx, ind_TM, TM, ind_TN, TN) need 6 input parameters, binary
+%   plain image 'px', binary cipher image 'cx', indexes of subvector TM
+%   'ind_TM', subvector 'TM', indexes of subvector TN and subvector 'TN'. For
+%   each round, this function updates TM , TN and their indexes with a pair
+%   of known image px and cx. 
+% 
+%   Example:
+%      [TM_SET, TN_SET, indTM_SET, indTN_SET] = iteration(px, cx, ind_TM, TM, ind_TN, TN);
+
+%   Copyright 2016
+
 TM_SET{1,1} = TM;  TN_SET{1,1} = TN;
 indTM_SET{1,1} = ind_TM;   indTN_SET{1,1} = ind_TN;
 for i = 2:100

@@ -12,7 +12,7 @@ function [ind_TM, ind_TN, TM_SET, TN_SET, indTM_SET, indTN_SET] = KPA_ISEA(~)
 %   Step 3: Reveal TM and TN, these two processes are similar:
 %       a) Get the number of elements 1's in each row vector of plain image and 
 %         cipher image respectively;
-%       b) Get unique number in vectors of 1's elements from Step 3-a);
+%       b) Get unique number in vectors of elements 1's from Step 3-a);
 %       c) Reveal approximate TM or TN with comparing the unique number of elements
 %         1's in plain image and cipher image.
 %         

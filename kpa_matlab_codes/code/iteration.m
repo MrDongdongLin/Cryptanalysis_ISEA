@@ -34,17 +34,20 @@ for i = 2:100
             % If subvectors' length still can increase with a new pair of 
             % known image:
             if nml~=length(TM) || nnl~=length(TN)
-                h = msgbox('Please add another pair of known image','Tip');
+                disp('TM and TN can still increase with a new pair of known image');
+                fprintf('Please choose another plain image: ');
                 [fname,dire]=uigetfile('*.bmp','select the plain image :)');
                 p_path = [dire,fname];
+                fprintf('%s\n', fname);
                 clear dire fname
                 px = Tobinary(imread(p_path));
-            
+                
+                fprintf('Correspoding cipher image: ');
                 [fname,dire]=uigetfile('*.bmp','select the cipher image :)');
                 c_path = [dire,fname];
+                fprintf('%s\n', fname);
                 clear dire fname
                 cx = Tobinary(imread(c_path));
-                close(h);
             end
         end
     end

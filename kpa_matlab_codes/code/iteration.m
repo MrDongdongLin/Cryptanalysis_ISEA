@@ -36,18 +36,23 @@ for i = 2:100
             if nml~=length(TM) || nnl~=length(TN)
                 disp('TM and TN can still increase with a new pair of known image');
                 fprintf('Please choose another plain image: ');
-                [fname,dire]=uigetfile('*.bmp','select the plain image :)');
-                p_path = [dire,fname];
-                fprintf('%s\n', fname);
-                clear dire fname
-                px = Tobinary(imread(p_path));
+                try
+                    [fname,dire]=uigetfile('*.bmp','select the plain image :)');
+                    p_path = [dire,fname];
+                    fprintf('%s\n', fname);
+                    clear dire fname
+                    px = Tobinary(imread(p_path));
                 
-                fprintf('Correspoding cipher image: ');
-                [fname,dire]=uigetfile('*.bmp','select the cipher image :)');
-                c_path = [dire,fname];
-                fprintf('%s\n', fname);
-                clear dire fname
-                cx = Tobinary(imread(c_path));
+                    fprintf('Correspoding cipher image: ');
+                    [fname,dire]=uigetfile('*.bmp','select the cipher image :)');
+                    c_path = [dire,fname];
+                    fprintf('%s\n', fname);
+                    clear dire fname
+                    cx = Tobinary(imread(c_path));
+                catch me
+                    disp('Read file failed!');
+                    return;
+                end
             end
         end
     end

@@ -4,7 +4,7 @@ function [ind1, ind2] = uniqueInd(vec)
 % 
 %   Example:
 %       vec  = [1, 2, 3, 4, 5, 5, 4, 3, 2, 66];
-%       [ind1,ind2] = soleInd(vec);
+%       [ind1,ind2] = uniqueInd(vec);
 %     
 %   Output:
 %       ind1 = [1,66];

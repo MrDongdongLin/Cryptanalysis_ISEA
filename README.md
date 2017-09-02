@@ -42,31 +42,6 @@ All the known images are enrcypted with the same secrect keys, and secrect keys 
 
 See more details in each file.
 
-## Changelog
-
-- v1.0.0 (Sep. 17-th 2016) Modified by Dongdong Lin
-
-First published at Arxiv.
-
-- v1.1.0 (Nov. 29-th 2016) Modified by Dongdong Lin
-
-Accepted by IEEE Trans. on MultiMedia.
-Update the code's comments.
-
-- v1.1.1 (Nov. 30-th 2016) Modified by Dongdong Lin
-
-Update the code's comments.
-
-- v1.1.2 (Dec. 13-th 2016) Modified by Dongdong Lin
-
-Update user interface.
-
-- v1.1.3 (Aug. 17-th 2017) Modified by Dongdong Lin
-
-Update README.md file.
-
-- v1.1.4 (Sep. 02-th 2017) Modified by Dongdong Lin
-
-Update README.md file.
+## [CHANGELOG](https://github.com/MrDongdongLin/Cryptanalysis_ISEA/releases/tag/v1.1.4)
 
 ## [LICENCE](https://github.com/MrDongdongLin/Cryptanalysis_ISEA/blob/master/LICENCE.md)

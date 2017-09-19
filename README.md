@@ -4,7 +4,7 @@
 [![Powerby](https://img.shields.io/badge/powerby-DongdongLin-orange.svg)](https://github.com/MrDongdongLin)
 
 This package of codes is correspoding to the paper:
-[Chengqing Li](http://www.ee.cityu.edu.hk/~cqli/) , [Dongdong Lin](https://github.com/MrDongdongLin), [Jinhu Lv](http://lsc.amss.ac.cn/~ljh/), "Cryptanalyzing an Image-Scrambling Encryption Algorithm of Pixel Bits", IEEE MultiMedia 24(3):64-71, 2017. Here is the [link](http://ieeexplore.ieee.org/document/7999153/) and DOI:10.1109/MMUL.2017.3051512.
+[Chengqing Li](http://www.ee.cityu.edu.hk/~cqli/) , [Dongdong Lin](https://github.com/MrDongdongLin), [Jinhu Lv](http://lsc.amss.ac.cn/~ljh/), "Cryptanalyzing an Image-Scrambling Encryption Algorithm of Pixel Bits", IEEE MultiMedia 24(3):64-71, 2017. Here is the [IEEE link](http://ieeexplore.ieee.org/document/7999153/) and DOI:10.1109/MMUL.2017.3051512, and [link](http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=1&SID=V29VUWxciASMpWHuOAn&page=1&doc=2) of Web of Science.
 
 More information about this paper can be found [here](https://arxiv.org/pdf/1607.01642.pdf).
 
